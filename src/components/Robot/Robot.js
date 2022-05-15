@@ -20,8 +20,9 @@ const Robot = ({
           <ul className="list-group">
             <li className="list-group-item">Resistance: {resistance}</li>
             <li className="list-group-item">Velocity: {velocity}</li>
-            <li className="list-group-item">Date ofcreation: {created}</li>
+            <li className="list-group-item">Date of creation: {created}</li>
           </ul>
+          <button className="btn btn-danger">Delete</button>
         </div>
       </div>
     </RobotStyle>
