@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
 export const RobotListStyle = styled.div`
-  .robots-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  ul {
+    list-style: none;
+    padding-left: 0;
   }
 `;
