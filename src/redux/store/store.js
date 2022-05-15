@@ -2,7 +2,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import robotsReducer from "../features/robotsSlice";
 
 const store = configureStore({
-  reducer: { robos: robotsReducer },
+  reducer: { robots: robotsReducer },
 });
 
 export default store;

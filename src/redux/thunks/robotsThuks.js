@@ -8,7 +8,7 @@ export const loadRobotsThunk = () => async (dispatch) => {
       process.env.REACT_APP_API_URL
     );
     if (status === 200) {
-      dispatch(loadRobotsActionCreator(robots));
+      dispatch(loadRobotsActionCreator(robots.robots));
     }
   } catch {}
 };
