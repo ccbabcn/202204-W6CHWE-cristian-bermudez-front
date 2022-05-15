@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { RobotStyle } from "./RobotStyle";
 
 const Robot = ({
@@ -25,6 +26,16 @@ const Robot = ({
       </div>
     </RobotStyle>
   );
+};
+
+Robot.propTypes = {
+  robot: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    resistance: PropTypes.number.isRequired,
+    created: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    velocity: PropTypes.number.isRequired,
+  }).isRequired,
 };
 
 export default Robot;
