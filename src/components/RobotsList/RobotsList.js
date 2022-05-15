@@ -6,7 +6,7 @@ const RobotsList = () => {
   return (
     <ul>
       {robots.map((robot) => (
-        <Robot key={robot.id} robot={robot} />
+        <Robot key={robot._id} robot={robot} />
       ))}
     </ul>
   );

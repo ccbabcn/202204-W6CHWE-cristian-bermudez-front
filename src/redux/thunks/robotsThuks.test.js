@@ -8,7 +8,7 @@ describe("Given a loadRobotsThunk", () => {
       const dispatch = jest.fn();
       const robots = mockRobots;
 
-      const expectedAction = loadRobotsActionCreator(robots);
+      const expectedAction = loadRobotsActionCreator(robots.robots);
 
       const thunk = loadRobotsThunk(null, mockRobots);
       await thunk(dispatch);

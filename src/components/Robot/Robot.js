@@ -1,15 +1,15 @@
 const Robot = ({
   robot,
-  robot: { name, resiatnce, created, image, velocity },
+  robot: { name, resistance, created, image, velocity },
 }) => {
   return (
     <li data-testid="robot" className="robot">
       <h3 className="robot__name">{name}</h3>
       <img className="robot__image" src={image} alt={name} />
       <ul>
-        <li>{resiatnce}</li>
-        <li>{velocity}</li>
-        <li>{created}</li>
+        <li>Resistance: {resistance}</li>
+        <li>Velocity: {velocity}</li>
+        <li>Date ofcreation {created}</li>
       </ul>
     </li>
   );
