@@ -1,9 +1,9 @@
 const Robot = ({
   robot,
-  robo: { name, resiatnce, created, image, velocity },
+  robot: { name, resiatnce, created, image, velocity },
 }) => {
   return (
-    <li className="robot">
+    <li data-testid="robot" className="robot">
       <h3 className="robot__name">{name}</h3>
       <img className="robot__image" src={image} alt={name} />
       <ul>

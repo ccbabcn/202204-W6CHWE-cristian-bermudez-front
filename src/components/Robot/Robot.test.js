@@ -16,7 +16,7 @@ describe("Given Robot component", () => {
     test("Then it should render a robot object with a heading containing it's name", () => {
       render(
         <Provider store={store}>
-          <Robot robo={receiveRobot} />
+          <Robot robot={receiveRobot} />
         </Provider>
       );
 
@@ -29,7 +29,7 @@ describe("Given Robot component", () => {
     test("Then it should render a robot object with a image containing it's name as alt text", () => {
       render(
         <Provider store={store}>
-          <Robot robo={receiveRobot} />
+          <Robot robot={receiveRobot} />
         </Provider>
       );
 
@@ -42,7 +42,7 @@ describe("Given Robot component", () => {
     test("Then it should render a robot object with a list item", () => {
       render(
         <Provider store={store}>
-          <Robot robo={receiveRobot} />
+          <Robot robot={receiveRobot} />
         </Provider>
       );
 
