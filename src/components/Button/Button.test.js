@@ -1,11 +1,10 @@
 import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
 import { Provider } from "react-redux";
 import store from "../../redux/store/store";
 import Button from "./Button";
 
 const passedText = "buttonTest";
-const mockFunction = jest.fn();
+const mockFunction = jest.fn().mockReturnThis;
 const passedClass = "mockClass";
 
 render(
