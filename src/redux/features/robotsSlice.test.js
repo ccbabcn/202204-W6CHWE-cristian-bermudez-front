@@ -1,4 +1,4 @@
-import { mockRobot, mockRobots } from "../../mocks/mockRobots";
+import { mockRobot, mockRobotsList } from "../../mocks/mockRobots";
 import robotsReducer, {
   deleteRobotActionCreator,
   loadRobotsActionCreator,
@@ -38,7 +38,7 @@ describe("Given a robotsReducer", () => {
 
   describe("When it's deleteRobotsActionCreator receives a state with an a array containning a robot", () => {
     test("Then it should return a new state with the new array", () => {
-      const actualState = mockRobots;
+      const actualState = mockRobotsList;
       const robotToDelete = mockRobot;
 
       const expectedNewState = [

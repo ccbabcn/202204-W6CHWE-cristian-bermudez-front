@@ -19,7 +19,7 @@ export const loadRobotsThunk = () => async (dispatch) => {
 export const deleteRobotThunk = (robotId) => async (dispatch) => {
   try {
     const { status } = await axios.delete(
-      `${process.env.REACT_APP_API_URL}${robotId}`
+      `${process.env.REACT_APP_API_URL}delete/${robotId}`
     );
     if (status === 200) {
       dispatch(deleteRobotActionCreator(robotId));

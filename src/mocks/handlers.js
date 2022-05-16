@@ -6,7 +6,7 @@ export const handlers = [
     return res(ctx.status(200), ctx.json(mockRobots));
   }),
   rest.delete(
-    `${process.env.REACT_APP_API_URL}${mockRobot._id}`,
+    `${process.env.REACT_APP_API_URL}delete/${mockRobot._id}`,
     (req, res, ctx) => {
       return res(ctx.status(200), ctx.json({ msg: "robot deleted" }));
     }
