@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
+import { loadRobotsThunk } from "../../redux/thunks/robots/robotsThuks";
 import { userLogInThunk } from "../../redux/thunks/user/userThunk";
 
 const SigInForm = () => {
@@ -23,12 +24,12 @@ const SigInForm = () => {
     }
   }, [actualFormState]);
 
-  const dispatch = useDispatch;
+  const dispatch = useDispatch();
 
-  const logInOnSubmit = (event) => {
-    dispatch(userLogInThunk(actualFormState));
+  const logInOnSubmit = async (event) => {
     event.preventDefault();
-
+    await dispatch(userLogInThunk(actualFormState));
+    await dispatch(loadRobotsThunk());
     setFormState(initialFormState);
   };
 
