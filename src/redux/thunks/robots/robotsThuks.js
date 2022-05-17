@@ -3,7 +3,7 @@ import axios from "axios";
 import {
   deleteRobotActionCreator,
   loadRobotsActionCreator,
-} from "../features/robotsSlice";
+} from "../../features/robotsSlice/robotsSlice";
 
 export const loadRobotsThunk = () => async (dispatch) => {
   try {

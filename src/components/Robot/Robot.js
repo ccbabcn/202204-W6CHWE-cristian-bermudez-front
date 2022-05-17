@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { useDispatch } from "react-redux";
-import { deleteRobotThunk } from "../../redux/thunks/robotsThuks";
+import { deleteRobotThunk } from "../../redux/thunks/robots/robotsThuks";
 import Button from "../Button/Button";
 import { RobotStyle } from "./RobotStyle";
 
