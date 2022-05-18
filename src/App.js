@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import RobotsList from "./components/RobotsList/RobotsList";
-import { loadRobotsThunk } from "./redux/thunks/robotsThuks";
+import { loadRobotsThunk } from "./redux/thunks/robots/robotsThuks";
 
 function App() {
   const dispatch = useDispatch();
@@ -10,7 +10,11 @@ function App() {
     dispatch(loadRobotsThunk());
   }, [dispatch]);
 
-  return <RobotsList />;
+  return (
+    <>
+      <RobotsList />
+    </>
+  );
 }
 
 export default App;
